@@ -1,0 +1,3 @@
+[submodule "modules/module-storage"]
+	path = modules/module-storage
+	url = https://github.com/LuciysVil/Lab4.git
