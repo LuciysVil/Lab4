@@ -1,0 +1,52 @@
+# CONTRACT.md
+
+Модуль: module-storage
+
+Проект: StreamingService
+
+Версия: 1.0
+
+---
+
+## 1. Описание функций
+
+- save_user_data — сохранение пользовательских данных
+- load_user_data — загрузка пользовательских данных
+- delete_user_data — удаление пользовательских данных
+
+---
+
+## 2. Параметры
+
+save_user_data:
+- user_id (число)
+- data (JSON объект)
+
+load_user_data:
+- user_id (число)
+
+delete_user_data:
+- user_id (число)
+
+---
+
+## 3. Формат возвращаемых данных
+
+save_user_data:
+- Возвращает статус операции (true или false).
+
+load_user_data:
+- Возвращает JSON объект с данными пользователя.
+
+delete_user_data:
+- Возвращает статус удаления (true или false).
+
+---
+
+## 4. Примеры использования
+
+save_user_data(1, {"name": "Иван Иванов"})
+
+load_user_data(1)
+
+delete_user_data(1)

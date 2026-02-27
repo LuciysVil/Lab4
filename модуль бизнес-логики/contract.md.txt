@@ -1,0 +1,51 @@
+# CONTRACT.md
+
+Модуль: module-business_logic
+
+Проект: StreamingService
+
+Версия: 1.0
+
+---
+
+## 1. Описание функций
+
+- check_subscription_validity — проверка подписки пользователя
+- process_payment — обработка платежа
+- generate_recommendations — генерация рекомендаций
+
+---
+
+## 2. Параметры
+
+check_subscription_validity:
+- user_id (число)
+
+process_payment:
+- payment_details (JSON объект)
+
+generate_recommendations:
+- user_id (число)
+
+---
+
+## 3. Формат возвращаемых данных
+
+check_subscription_validity:
+- Возвращает булево значение (true или false).
+
+process_payment:
+- Возвращает результат обработки платежа (успех или ошибка).
+
+generate_recommendations:
+- Возвращает массив рекомендуемых элементов.
+
+---
+
+## 4. Примеры использования
+
+check_subscription_validity(1)
+
+process_payment({"amount": 100})
+
+generate_recommendations(1)

@@ -1,0 +1,44 @@
+# CONTRACT.md
+
+Модуль: module-ui
+
+Проект: StreamingService
+
+Версия: 1.0
+
+---
+
+## 1. Описание функций
+
+- render_login_form — отображение формы входа
+- display_media_list — отображение списка медиа-контента
+- show_user_profile — отображение профиля пользователя
+
+---
+
+## 2. Параметры
+
+render_login_form:
+- params (не требуются)
+
+display_media_list:
+- media_list (массив объектов)
+
+show_user_profile:
+- user_data (JSON объект)
+
+---
+
+## 3. Формат возвращаемых данных
+
+Все методы предназначены исключительно для рендеринга UI и не возвращают никаких значений.
+
+---
+
+## 4. Примеры использования
+
+render_login_form()
+
+display_media_list([{"title": "Фильм 1"}, {"title": "Фильм 2"}])
+
+show_user_profile({"name": "Иван Иванов", "email": "ivan@example.com"})
